@@ -33,17 +33,18 @@ namespace HumJ.ProjectMosillo.WaveFileBuilder
             RiffChunk.FileLength = fileLength;
         }
 
-        public Span<byte> GetSampleBytes(ushort numChannel)
+        public Span<byte> GetFrameBytes(uint frameIndex)
         {
-            var channelLength = DataSubchunk.Data.Length / FormatSubchunk.NumChannels;
-            var offset = channelLength * (FormatSubchunk.NumChannels - numChannel - 1);
-            return DataSubchunk.Data.AsSpan(offset, channelLength);
+            var bytesPerFrame = FormatSubchunk.NumChannels * FormatSubchunk.BitsPerSample / 8;
+            var offset = (int)(bytesPerFrame * frameIndex);
+            return DataSubchunk.Data.AsSpan(offset, bytesPerFrame);
         }
-        public Span<byte> GetSampleBytes(ushort numChannel, uint sampleIndex)
+
+        public Span<byte> GetFrameBytes(uint frameIndex, ushort channel)
         {
+            var bytes = GetFrameBytes(frameIndex);
             var bytesPerSample = FormatSubchunk.BitsPerSample / 8;
-            var bytes = GetSampleBytes(numChannel);
-            var offset = (int)(sampleIndex * bytesPerSample);
+            var offset = (int)(bytesPerSample * channel);
             return bytes.Slice(offset, bytesPerSample);
         }
 
