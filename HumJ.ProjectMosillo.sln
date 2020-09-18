@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HumJ.ProjectMosillo.WaveFil
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NUnitTestProject", "NUnitTestProject\NUnitTestProject.csproj", "{757B9FD6-31FD-4154-B7D8-60571BA547D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HumJ.ProjectMosillo.ImageReader", "HumJ.ProjectMosillo.ImageReader\HumJ.ProjectMosillo.ImageReader.csproj", "{65267972-0808-4C24-8129-44D15A5EB403}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HumJ.ProjectMosillo.ImageOscillator", "HumJ.ProjectMosillo.ImageOscillator\HumJ.ProjectMosillo.ImageOscillator.csproj", "{AC0AEFD6-2303-4214-9284-A81F303B238E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{757B9FD6-31FD-4154-B7D8-60571BA547D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{757B9FD6-31FD-4154-B7D8-60571BA547D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{757B9FD6-31FD-4154-B7D8-60571BA547D2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{65267972-0808-4C24-8129-44D15A5EB403}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{65267972-0808-4C24-8129-44D15A5EB403}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{65267972-0808-4C24-8129-44D15A5EB403}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{65267972-0808-4C24-8129-44D15A5EB403}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC0AEFD6-2303-4214-9284-A81F303B238E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC0AEFD6-2303-4214-9284-A81F303B238E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC0AEFD6-2303-4214-9284-A81F303B238E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC0AEFD6-2303-4214-9284-A81F303B238E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

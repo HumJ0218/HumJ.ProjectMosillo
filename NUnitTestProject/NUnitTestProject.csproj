@@ -13,7 +13,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\HumJ.ProjectMosillo.ImageOscillator\HumJ.ProjectMosillo.ImageOscillator.csproj" />
     <ProjectReference Include="..\HumJ.ProjectMosillo.WaveFileBuilder\HumJ.ProjectMosillo.WaveFileBuilder.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="test.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
